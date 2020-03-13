@@ -2,15 +2,16 @@
     "name": "Browser Wallet",
     "manifest_version": 2,
     "version": "1.0",
+    "description": "This is browser wallet for blockchain",
     "browser_action": {
         "default_title": "Browser Wallet",
         "default_popup": "index.html"
     },
 
-    "content_scripts": [
+    "background": [
         {
-          "matches": ["http://*/*", "https://*/*"],
-          "css": ["style.css"]
+          "scripts": ["js/events.js"],
+          "persistent": false
         }
     ]
 }
