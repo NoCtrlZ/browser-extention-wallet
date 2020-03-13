@@ -5,7 +5,9 @@ export default class Issue extends Component<{}> {
         return (
             <div id="issue">
                 <h3 className="methods">Issue</h3>
-                <button id="issue-button">Issue</button>
+                <div className="action-button">
+                    <button id="issue-button">Issue</button>
+                </div>
             </div>
         )
     }

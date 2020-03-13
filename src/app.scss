@@ -121,9 +121,49 @@ body {
             }
         }
 
-        .methods {
-            text-align: center;
-            font-size: 25px;
+        #body {
+            .methods {
+                text-align: center;
+                font-size: 25px;
+            }
+            button {
+                position: relative;
+                display: inline-block;
+                padding: 0.75em 1.5em;
+                text-decoration: none;
+                color: #FFF;
+                border-radius: 4px;
+                box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .action-button {
+                text-align: center;
+            }
+            #transfer-button {
+                background: #3c7ad6;
+                border-bottom: solid 2px #6ea6e6;
+            }
+            #sign-button {
+                background: #cc4128;
+                border-bottom: solid 2px #ee4629;
+            }
+            #generate-button {
+                background: #ee5aee;
+                border-bottom: solid 2px #eb8beb;
+            }
+            #purchase-button {
+                background: #81ec7d;
+                border-bottom: solid 2px #bdf3b0;
+            }
+            #issue-button {
+                background: #e6cf05;
+                border-bottom: solid 2px #e6e33f;
+            }
+            #send-button {
+                background: #8d4808;
+                border-bottom: solid 2px #9e6f31;
+            }
         }
     }
 }

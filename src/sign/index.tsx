@@ -5,7 +5,9 @@ export default class Send extends Component<{}> {
         return (
             <div id="send">
                 <h3 className="methods">Send</h3>
-                <button id="send-button">Send</button>
+                <div className="action-button">
+                    <button id="send-button">Send</button>
+                </div>
             </div>
         )
     }
