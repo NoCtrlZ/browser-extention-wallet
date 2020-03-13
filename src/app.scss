@@ -1,16 +1,31 @@
 body {
     width: 350px;
     height: 500px;
-}
+    margin: 0px;
 
-#title {
-    text-align: center;
-}
+    .container {
+        #title {
+            text-align: center;
+            background: #f4f4f4;
+            h1 {
+                padding-top: 18px;
+                padding-bottom: 18px;
+                margin-top: 0px;
+            }
+        }
 
-.methods {
-    text-align: center;
-}
+        #header {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-bottom: inset 1px #a7a2a2;
+            text-align: center;
+            h2 {
+                margin-top: 0px;
+            }
+        }
 
-button {
-    text-align: center;
+        .methods {
+            text-align: center;
+        }
+    }
 }

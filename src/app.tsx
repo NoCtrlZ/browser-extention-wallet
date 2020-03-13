@@ -17,19 +17,24 @@ export default class App extends React.Component<AppProps, AppState> {
     render() {
         return (
             <div className="container">
-                <h1 id="title">Browser Wallet</h1>
-                <h2 className="methods">Transfer</h2>
-                <button>Transfer</button>
-                <h2 className="methods">Sign</h2>
-                <button>Sign</button>
-                <h2 className="methods">Generate</h2>
-                <button>Generate</button>
-                <h2 className="methods">Purchase</h2>
-                <button>Purchase</button>
-                <h2 className="methods">Issue Certificate</h2>
-                <button>Issue</button>
-                <h2 className="methods">Send Certificate</h2>
-                <button>Send</button>
+                <div id="title">
+                    <h1>Browser Wallet</h1>
+                </div>
+                <div id="header">
+                    <h2>Your Address</h2>
+                </div>
+                <h3 className="methods">Transfer</h3>
+                <button id="transfer">Transfer</button>
+                <h3 className="methods">Sign</h3>
+                <button id="sign">Sign</button>
+                <h3 className="methods">Generate</h3>
+                <button id="generate">Generate</button>
+                <h3 className="methods">Purchase</h3>
+                <button id="purchase">Purchase</button>
+                <h3 className="methods">Issue Certificate</h3>
+                <button id="issue">Issue</button>
+                <h3 className="methods">Send Certificate</h3>
+                <button id="send">Send</button>
             </div>
         )
     }
