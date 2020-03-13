@@ -1,5 +1,5 @@
-import React from 'react'
-import './app.scss'
+import React from "react";
+import "./app.scss";
 
 interface AppProps {}
 
@@ -10,11 +10,11 @@ export default class App extends React.Component<AppProps, AppState> {
         super(props, state);
     }
 
-    componentDidMount() {
-        chrome.runtime.sendMessage({ popupMounted: true });
+    public componentDidMount() {
+        // chrome.runtime.sendMessage({ popupMounted: true });
     }
 
-    render() {
+    public render() {
         return (
             <div className="container">
                 <div id="title">
@@ -25,8 +25,8 @@ export default class App extends React.Component<AppProps, AppState> {
                         <div className="dropdown">
                         <div id="nav-drawer">
                             <input id="nav-input" type="checkbox" className="nav-unshown"/>
-                            <label id="nav-open" htmlFor="nav-input"><span></span></label>
-                            <label className="nav-unshown" id="nav-close" htmlFor="nav-input"></label>
+                            <label id="nav-open" htmlFor="nav-input"><span/></label>
+                            <label className="nav-unshown" id="nav-close" htmlFor="nav-input"/>
                             <div id="nav-content"><h2>Select Function</h2></div>
                         </div>
                         </div>
@@ -48,6 +48,6 @@ export default class App extends React.Component<AppProps, AppState> {
                 <h3 className="methods">Send Certificate</h3>
                 <button id="send">Send</button>
             </div>
-        )
+        );
     }
 }
