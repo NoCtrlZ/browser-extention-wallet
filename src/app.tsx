@@ -21,7 +21,14 @@ export default class App extends React.Component<AppProps, AppState> {
                     <h1>Browser Wallet</h1>
                 </div>
                 <div id="header">
-                    <h2>Your Address</h2>
+                    <div id="header-contents">
+                        <div className="dropdown">
+                            <button type="button" id="hamburger-button" className="hamburger"></button>
+                        </div>
+                        <div id="account-info">
+                            <h2>Your Address</h2>
+                        </div>
+                    </div>
                 </div>
                 <h3 className="methods">Transfer</h3>
                 <button id="transfer">Transfer</button>
