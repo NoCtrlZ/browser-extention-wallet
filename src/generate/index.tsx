@@ -1,0 +1,12 @@
+import React, { Component } from "react"
+
+export default class Generate extends Component<{}> {
+    render() {
+        return (
+            <div id="generate">
+                <h3 className="methods">Generate</h3>
+                <button id="generate-button">Generate</button>
+            </div>
+        )
+    }
+}

@@ -71,13 +71,36 @@ body {
                     top: 0;
                     left: 0;
                     z-index: 9999;
-                    width: 90%;
+                    width: 50%;
                     max-width: 330px;
                     height: 100%;
                     background: #fff;
                     transition: .3s ease-in-out;
                     -webkit-transform: translateX(-105%);
                     transform: translateX(-105%);
+                    .sidebar-title {
+                        border-bottom: inset 1px #a7a2a2;
+                        width: 90%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        h2 {
+                            text-align: center;
+                        }
+                    }
+                    .function-list {
+                        .function-name {
+                            list-style-type: none;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            font-size: 18px;
+                            color: #606c6d;
+                            font-weight: 900;
+                        }
+                        a {
+                            text-decoration: none;
+                            font-size: 18px;
+                        }
+                    }
                 }
                 #nav-input:checked ~ #nav-close {
                     display: block;
@@ -100,6 +123,7 @@ body {
 
         .methods {
             text-align: center;
+            font-size: 25px;
         }
     }
 }

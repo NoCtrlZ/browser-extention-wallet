@@ -6,6 +6,3 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
     return isResponseAsync;
 })
-
-// const a = 5;
-// export default a;
