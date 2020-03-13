@@ -11,7 +11,7 @@ export default class App extends React.Component<AppProps, AppState> {
     }
 
     public componentDidMount() {
-        // chrome.runtime.sendMessage({ popupMounted: true });
+        chrome.runtime.sendMessage({ popupMounted: true });
     }
 
     public render() {

@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "node-sass src/ -o public/ ",
-    "watch:css": "npm run build:css && node-sass src/ -o src/ -w -r",
-    "dev": "react-scripts-ts start",
+    "dev": "node-sass src/ -o public/ && react-scripts-ts start",
     "build": "webpack --config webpack.prod.js",
     "lint": "tslint 'src/**/*.{ts, tsx}'",
     "test": "echo \"Error: no test specified\" && exit 1"
