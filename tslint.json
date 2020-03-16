@@ -9,7 +9,14 @@
         "no-console": false,
         "interface-name": [false],
         "no-empty-interface": false,
-        "align": [false, "statements"]
+        "align": [false, "statements"],
+        "semicolon": [true, "never"],
+        "ordered-imports": false,
+        "curly": [true, "as-needed"],
+        "member-access": false,
+        "arrow-parens": ["error", "as-needed"],
+        "trailing-comma": false,
+        "jsx-wrap-multiline": false
     },
     "rulesDirectory": []
 }

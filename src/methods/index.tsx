@@ -1,5 +1,5 @@
-import React from 'react'
-import { HashRouter as Router, Link } from 'react-router-dom'
+import React from "react"
+import { HashRouter as Router, Link } from "react-router-dom"
 
 const Methods = () =>
 <div id="nav-drawer">

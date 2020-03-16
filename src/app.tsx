@@ -1,5 +1,5 @@
 import React from "react"
-import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from "react-router-dom"
 import "./app.scss"
 import Methods from "./methods"
 import Generate from "./generate"
@@ -15,11 +15,11 @@ interface AppState {}
 
 export default class App extends React.Component<AppProps, AppState> {
     constructor(props: AppProps, state: AppState) {
-        super(props, state);
+        super(props, state)
     }
 
     public componentDidMount() {
-        chrome.runtime.sendMessage({ popupMounted: true });
+        chrome.runtime.sendMessage({ popupMounted: true })
     }
 
     public render() {
@@ -39,16 +39,16 @@ export default class App extends React.Component<AppProps, AppState> {
                     </div>
                     <div id="body">
                         <Switch>
-                            <Route exact path="/" component={Transfer} />
-                            <Route exact path="/sign" component={Sign} />
-                            <Route exact path="/generate" component={Generate} />
-                            <Route exact path="/purchase" component={Purchase} />
-                            <Route exact path="/issue" component={Issue} />
-                            <Route exact path="/send" component={Send} />
+                            <Route exact={true} path="/" component={Transfer} />
+                            <Route exact={true} path="/sign" component={Sign} />
+                            <Route exact={true} path="/generate" component={Generate} />
+                            <Route exact={true} path="/purchase" component={Purchase} />
+                            <Route exact={true} path="/issue" component={Issue} />
+                            <Route exact={true} path="/send" component={Send} />
                         </Switch>
                     </div>
                 </div>
             </Router>
-        );
+        )
     }
 }
